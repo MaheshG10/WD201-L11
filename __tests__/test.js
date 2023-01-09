@@ -18,7 +18,7 @@ const login = async () => {
     .send({ email: "test@user.com", password: "12345678" });
 };
 
-describe("first", () => {
+describe("Test cases", () => {
   beforeAll(async () => {
     await db.sequelize.sync({ force: true });
     server = app.listen(6000, () => {});
